@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script>
+<script type="module">
 import axios from 'axios'
 
 export default {
@@ -21,7 +21,7 @@ export default {
   }
   ,
   mounted() {
-    const BACKEND_URL = 'https://ecskohekohe.tk/api'
+    const BACKEND_URL = 'https://ecstestrunkim.tk/api'
     axios
       .get(BACKEND_URL)
       .then(response => (this.info = response.data))
