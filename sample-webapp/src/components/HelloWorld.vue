@@ -1,28 +1,32 @@
 <template>
   <div class="hello">
-    <h1>This application is Sample WebApp for CICD lesson.</h1>
+    <h1>{{ msg }}</h1>
+    <div>This application is Sample WebApp for CICD lesson.</div>
     <div>Response from REST API is... {{ info }}</div>
   </div>
 </template>
 
 <script>
-import axios from "axios"
+import axios from 'axios'
 
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
-    msg: String,
+    msg: String
   },
   data() {
     return {
-      info: null,
-    };
-  },
+      info: null
+    }
+  }
+  ,
   mounted() {
-    const BACKEND_URL = "https://ecstestrunkim.tk/api";
-    axios.get(BACKEND_URL).then((response) => (this.info = response.data));
-  },
-};
+    const BACKEND_URL = 'https://ecskohekohe.tk/api'
+    axios
+      .get(BACKEND_URL)
+      .then(response => (this.info = response.data))
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
