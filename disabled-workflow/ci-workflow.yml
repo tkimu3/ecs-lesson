@@ -1,6 +1,6 @@
 name: CI flow for Amazon ECS
 
-# on: [push]
+on: [push]
 
 env:
   SLACK_WEBHOOK: https://hooks.slack.com/services/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
