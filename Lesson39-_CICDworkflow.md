@@ -20,5 +20,25 @@ Search "Incoming WebHooks" and "Add App"
 
 ![](pics/run_test-unit.jpg)
 
+## L41 Set up GitHub Secrets
 
+GitHub repo > Settings > Secrets > Actions secrets / New sedcret
+- Name: AWS_ACCESS_KEY_ID
+- Value: ****
+
+- Name: AWS_SECRET_ACCESS_KEY
+- Value: ****
+
+## L42 Delete the ECR Image uploaded manually
+
+ECS > Amazon ECR Repositories
+
+- ecs-sample-webapp
+- ecs-sample-backend
+- ecs-sample-restapi
+
+ "Delete" button
+
+
+## L43 Implement CD Workflow
 
